@@ -34,6 +34,11 @@ const app = express();
 
 // USING MIDDLEWARES
 
+app.use("/" , (req , res)=>{
+    res.send("working api);
+});
+
+
 app.use(cors());
 app.use(express.json());
 app.use(authRouter)
@@ -43,9 +48,6 @@ app.use(commentRouter);
 app.use(folowRouter);
 app.use(repostRouter);
 
-app.get("/" , (req , res)=>{
-    res.json("Working");
-});
 
 
 
