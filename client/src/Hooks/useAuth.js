@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router';
 export const useAuth = () => {
     const navigate = useNavigate();
     const Register = async (username , email , password)=>{
-        const response = await fetch("http://localhost:5000/register" , {
+        const response = await fetch("https://thread-web-app-react-node-api.vercel.app/register" , {
             method:"POST" , 
             headers:{
                 "Content-Type": "application/json",
@@ -41,8 +41,8 @@ export const useAuth = () => {
                 "Content-Type": "application/json",
             },
         }
-        
-        const response = await axios.post("http://localhost:5000/login" , bodyPara , config);
+        axios.defaults.withCredentials = true;
+        const response = await axios.post("https://thread-web-app-react-node-api.vercel.app/login" , bodyPara , config);
 
         console.log(response.data.token);
         localStorage.setItem("x-auth-token" , response.data.token);
