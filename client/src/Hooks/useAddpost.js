@@ -13,8 +13,8 @@ export const useAddpost = () => {
                      "x-auth-token": token
                }
         }
-
-        const response = await axios.post("http://localhost:5000/post-thread" , {
+    axios.defaults.withCredentials = true;
+        const response = await axios.post("https://thread-web-app-react-node-api.vercel.app/post-thread" , {
             userId:userId,
             username:username,
             thread:thread,
