@@ -1,0 +1,56 @@
+*{
+    color: white;
+    
+}
+
+.c-card{
+    width: 500px;
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    
+}
+.c-upper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.c-left{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.c-username{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(195, 195, 195);
+    font-weight: 600;
+}
+
+.right-p{
+    color: white;
+    font-size: 25px;
+}
+
+
+.thread-comment{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    margin-top: 10px;
+
+}
+
+.comment-border{
+    background-color: gray;
+    height: 0.5px;
+    margin-top: 25px;
+    width: 100%;
+    
+}

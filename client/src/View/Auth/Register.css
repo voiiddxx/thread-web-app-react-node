@@ -1,0 +1,72 @@
+.register-main{
+    height: 100vh;
+    width: 100%;
+    background-color: #101010;
+}
+
+.auth-part{
+    height: 500px;
+    margin-left: -100px;
+    background: url("./thread.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.auth-form{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    margin-top: 70px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input{
+    height: 55px;
+    padding-left: 20px;
+    width: 330px;
+    background-color: #1e1e1e;
+    border-bottom: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+
+
+
+.submit-button{
+    height: 55px;
+    padding-left: 20px;
+    width: 350px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form p{
+    color: gray;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+form p span{
+    font-weight: 600;
+    cursor: pointer;
+}

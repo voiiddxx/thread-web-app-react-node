@@ -1,0 +1,126 @@
+.view-reply-main{  
+    margin-left: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.repost-card{
+    width: 600px;
+    background-color: black;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+
+.reply-user{
+    height:100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reply-user-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.reply-user-left img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reply-user-left h1{
+    color: rgb(183, 183, 183);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.reply-user-right p{
+    color: grey;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-size: 30px;font-weight: 500;
+
+}
+
+.reply-thread p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(235, 235, 235);
+    font-size: 15px;
+    margin-left: 55px;
+    margin-top: -15px;
+
+}
+
+
+
+.replied-post{
+    padding: 15px;
+    width: 440px;
+    margin-top: 15px;
+    border: 0.5px solid grey;
+    margin-left: 55px;
+    border-radius: 10px;
+}
+
+.replied-post-upper{
+    height: 60px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+
+}
+.upper-reply-left{
+    display: flex;
+    align-items: center;
+    
+}
+
+.upper-reply-left img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.upper-reply-left p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    
+    margin-left: 5px;
+    
+}
+
+
+.post-thread{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 15px;
+    font-size: 12px;
+    margin-top: -15px;
+    color: rgb(211, 204, 204);
+}
+
+.post-image{
+    max-height: 300px;
+    width: 100%;
+    margin-top: 15px;
+    object-fit: contain;
+    margin-left: 15px;
+}
+
+.border-line{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: 0.5px;
+    width: 100%;
+    margin-left: 50px;
+    background-color: rgb(91, 91, 91);
+}

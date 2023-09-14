@@ -1,0 +1,107 @@
+.modal-main{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #050505b7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal-main h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.modal-card{
+    min-height: 180px;
+    width: 650px;
+    background-color: #181818;
+    border-radius: 15px;
+    border: 0.01mm solid grey;
+    display: flex;
+    padding-top: 30px;
+    gap: 15px;
+}
+
+.card-left img{
+    height: 40px;
+    width: auto ;
+    border-radius: 100%;
+    margin-left: 30px;
+   
+}
+
+.card-right p{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.card-right input{
+    
+    width: 300px;
+    border: none;
+    background-color: transparent;
+    
+}
+
+.card-right input:focus{
+    outline: none;
+    border: none;
+    color: white;
+    border-top: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid transparent;
+}
+
+.postmodal-form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.postmodal-input{
+    padding-left: 0px;
+}
+
+
+.postmodal-input-image{
+    cursor: pointer;
+}
+
+
+.postmodal-button{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.post-button{
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+.postNow{
+    cursor: pointer;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid grey;
+    color: grey;
+    border-radius: 12px;
+    
+}
+
+.imageshow{
+    height: 200px;
+    width: auto;
+}
