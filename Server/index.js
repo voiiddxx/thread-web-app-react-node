@@ -48,6 +48,10 @@ app.use(commentRouter);
 app.use(folowRouter);
 app.use(repostRouter);
 
+app.get("/" , (req , res)=>{
+    res.json("Working");
+});
+
 
 
 
