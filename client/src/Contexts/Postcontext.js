@@ -4,7 +4,7 @@ import reducer from "./reducers/PostReducer"
 import { Navigate } from "react-router";
 
 const Postcontext = createContext();
-const GetPostAPI = "http://localhost:5000/get-all-data";
+const GetPostAPI = "https://thread-web-app-react-node-api.vercel.app/get-all-data";
 
 
 const initialState = {
@@ -26,6 +26,7 @@ const Postprovider = ({children}) =>{
 
     const getAllPost =  async()=>{
         try{
+            axios.defaults.withCredentials = true;
             dispatch({type:"POST_API_LOADING"});
             const response = await axios.get(GetPostAPI , {
                 headers:{
@@ -60,7 +61,8 @@ const Postprovider = ({children}) =>{
                     "x-auth-token":token
                 }
               };
-            const likerespose = await axios.post("http://localhost:5000/like-user-post?postid="+id , postData , axiosConfig );
+            axios.defaults.withCredentials = true;
+            const likerespose = await axios.post("https://thread-web-app-react-node-api.vercel.app/like-user-post?postid="+id , postData , axiosConfig );
             console.log(likerespose);
             forceupdate();
             
@@ -83,7 +85,8 @@ const Postprovider = ({children}) =>{
                     "x-auth-token":token
                 }
               };
-              const respose = await axios.post("http://localhost:5000/add-comment?postid="+id , bodyPara , axiosConfig);
+            axios.defaults.withCredentials = true;
+              const respose = await axios.post("https://thread-web-app-react-node-api.vercel.app/add-comment?postid="+id , bodyPara , axiosConfig);
               console.log(respose.data);
               forceupdate();
               Navigate("/Home");
@@ -95,7 +98,8 @@ const Postprovider = ({children}) =>{
 
     const getUserPost = async ()=>{
         try{
-            const respose = await axios.get("http://localhost:5000/get-user-thread" , {
+            axios.defaults.withCredentials = true;
+            const respose = await axios.get("https://thread-web-app-react-node-api.vercel.app/get-user-thread" , {
                 headers:{
                     "x-auth-token":token
                 }
@@ -123,7 +127,8 @@ const Postprovider = ({children}) =>{
           };
         
         try{
-            const response = await axios.post("http://localhost:5000/repost-thread" , bodyData , axiosConfig );
+            axios.defaults.withCredentials = true;
+            const response = await axios.post("https://thread-web-app-react-node-api.vercel.app/repost-thread" , bodyData , axiosConfig );
             console.log(response.data);
             alert("done")
         } catch(e){
