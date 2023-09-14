@@ -32,7 +32,14 @@ const app = express();
 
 
 // USING MIDDLEWARES
-app.use(cors());
+// USING MIDDLEWARES
+app.use(cors(
+    {
+        origin:[""],
+        methods:["POST" , "GET" , "PATCH"],
+        credentials:true,
+    }
+));
 app.use(express.json());
 app.use(authRouter)
 app.use(postRouter);
