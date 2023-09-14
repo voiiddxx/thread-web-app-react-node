@@ -14,7 +14,7 @@ export const useFollow = () => {
             }
           };
         try{
-            const response = await axios.post("http://localhost:5000/add-follow-unfollow" , bodyy , axiosConfig );
+            const response = await axios.post("https://thread-web-app-react-node-api.vercel.app/add-follow-unfollow" , bodyy , axiosConfig );
             console.log(response.data);
         } catch(e){
             console.log(e);
