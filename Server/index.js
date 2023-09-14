@@ -31,15 +31,16 @@ const app = express();
 
 
 
+
 // USING MIDDLEWARES
-// USING MIDDLEWARES
-app.use(cors(
-    {
-        origin:["https://thread-web-app-react-node-api.vercel.app/"],
+const corsoption = {
+    origin:["https://thread-web-app-react-node-api.vercel.app/"],
         methods:["POST" , "GET" , "PATCH"],
         credentials:true,
-    }
-));
+        optionSuccessStatus:200
+}
+app.use(cors(corsoption));
+
 app.use(express.json());
 app.use(authRouter)
 app.use(postRouter);
