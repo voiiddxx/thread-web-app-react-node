@@ -35,7 +35,7 @@ const app = express();
 // USING MIDDLEWARES
 app.use(cors(
     {
-        origin:[""],
+        origin:["https://thread-web-app-react-node-api.vercel.app/"],
         methods:["POST" , "GET" , "PATCH"],
         credentials:true,
     }
