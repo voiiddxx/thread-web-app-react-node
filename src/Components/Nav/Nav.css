@@ -1,0 +1,17 @@
+.nav-main{
+    width: 100%;
+  display: flex;
+ padding-top: 40px;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.mid{
+    display: flex;
+    gap: 80px;
+}
+
+.left img{
+    height: 50px;
+    width: auto;
+}

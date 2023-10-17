@@ -1,0 +1,30 @@
+.s-post{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.s-main{
+    width: 600px;
+    height: 550px;
+    margin-left: 80px;
+}
+.s-card-upper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.s-post-card{
+    margin-top: 15px;
+}
+
+.s-lower{
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}

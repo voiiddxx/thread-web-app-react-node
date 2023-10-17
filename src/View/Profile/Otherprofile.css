@@ -1,0 +1,30 @@
+.follower-button{
+    height: 40px;
+    width: 550px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.follower-button p{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+
+}
+
+
+.follower-button:active{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.follower-button p:active{
+    color: white;
+}

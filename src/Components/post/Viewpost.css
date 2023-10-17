@@ -1,0 +1,121 @@
+.view-main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ 
+    width: 600px;
+    margin-left: 100px;
+    margin-bottom: 15px;
+    
+}
+
+
+.upper-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+.view-upper{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    
+    justify-content: space-between;
+
+    
+}
+.view-user-image{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.upper-username{
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.upper-icon{
+    color: rgb(131, 131, 131);
+    font-size: 14px;
+}
+
+.view-card{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+
+}
+.view-border{
+
+    width: 4px;
+    background-color: rgb(66, 66, 66);
+    margin-left: 15px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+
+.content-img{
+    height: 300px;
+    width: auto;
+    max-width: 600px;
+    margin-top: 15px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.content-p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+
+.content-icons{
+    display: flex;
+    margin-left: 20px;
+    gap: 15px;
+    margin-top: 15px;
+    
+}
+
+.content-icons p{
+    
+    color: white;
+    
+}
+.content-reach{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 20px;
+    gap: 20px;
+}
+.content-reach p{
+    color: grey;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.view-bottom-border{
+    margin-top: 25px;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(85, 85, 85);
+}
+
+.icons:hover{
+    opacity: 10%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
